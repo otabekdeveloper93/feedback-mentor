@@ -1,0 +1,24 @@
+@import "../../assets/scss/variable.scss";
+
+.back-to-home_link{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #647196;
+
+    svg{
+        fill: #4661E6;
+        stroke-width: 1px;
+    }
+}
+.white{
+    color: $whiteColor;
+    svg{
+        fill: $whiteColor;
+    }
+}
+.back-to-home_link:hover {
+    text-decoration: underline;
+}

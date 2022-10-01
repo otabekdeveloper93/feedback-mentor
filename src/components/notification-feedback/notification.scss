@@ -1,0 +1,39 @@
+@import "../../assets/scss/variable.scss";
+
+.notification{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+    height: 600px;
+    background: $whiteColor;
+    border-radius: $borderRadius;
+    .notification-box{
+        width: 410px;
+        height: 379px;
+        text-align: center;
+        img{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        h2{
+            margin: 53px 0 16px 0;
+            font-weight: 700;
+            font-size: 24px;
+            letter-spacing: -0.333333px;
+            color: $darkColor;
+        }
+        p{  
+            margin: 0;
+            margin-bottom: 48px;
+            font-weight: 400;
+            font-size: 16px;
+            color: #647196;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px){
+
+}

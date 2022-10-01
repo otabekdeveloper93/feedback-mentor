@@ -1,0 +1,86 @@
+@import '../../assets/scss/variable.scss';
+
+.road-map{
+    width: 255px;
+    height: 178px;
+    margin-top: 24px;
+    padding: 19px 24px 24px 24px;
+    background-color: $whiteColor;
+    border-radius: $borderRadius;
+    .road-map_title_box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        width: 207px;
+        height: 26px;
+        h3{
+            margin: 0;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+        }
+        .road-map_link{
+            text-decoration: underline;
+            font-size: 13px;
+            color: $activeColor;
+        }
+        :hover{
+            color: #8397F8;
+        }
+    }
+    ul{
+        width: 207px;
+        margin: 24px auto;
+        padding-left: 0;
+        list-style: none;
+        li{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            align-items: center;
+            .roadmap_planned{
+                font-weight: 400;
+                font-size: 16px;
+
+                .before{
+                    display: inline-block;
+                    margin-bottom: 2px;
+                    margin-right: 16px;
+                    width: 8px;
+                    height: 8px;
+                    border-radius: 50%;
+                }
+                .planned{
+                    background-color: $orangeColor;
+                }
+                .progress{
+                    background-color: $primaryColor;
+                }
+                .live{
+                    background-color: $activeColor;
+                }
+            }
+            
+            .planned_count{
+                font-size: 16px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 790px){
+    .road-map{
+        width: 223px;
+        height: 178px;
+        margin: 0;
+        .road-map_title_box{
+            width: 100%;
+        }
+        ul{
+            width: 100%;
+            margin-bottom: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../assets/scss/variable.scss';
+
+.type-filter{
+    background-color: $whiteColor;
+    border-radius: $borderRadius;
+    width: 255px;
+    height: 166px;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 24px;
+    gap: 14px 8px;
+}
+.type-filter_input_radio:checked + .ActiveRadio{
+    background-color: $activeColor;
+    color: $whiteColor;
+}
+
+@media only screen and (max-width: 790px){
+    .type-filter{
+        width: 223px;
+        height: 178px;
+        margin-top: 0;
+    }
+}

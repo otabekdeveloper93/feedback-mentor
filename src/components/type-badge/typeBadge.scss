@@ -1,0 +1,16 @@
+@import "../../assets/scss/variable.scss";
+
+.typeBadge{
+    display: inline-block;
+    background: $defaultColor;
+    border-radius: $borderRadius;
+    color: $activeColor;
+    padding: 6px 16px;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: capitalize;
+    line-height: 19px;
+}
+.typeBadge:hover{
+    background-color: $defaultHoverColor;
+}

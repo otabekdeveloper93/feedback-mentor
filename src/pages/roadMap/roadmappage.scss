@@ -1,0 +1,116 @@
+@import "../../assets/scss/variable.scss";
+
+.road-map-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 27px 32px; 
+    height: 113px;
+    background-color: $bgHeaderColor;
+    border-radius: $borderRadius;
+    .primary{
+        margin: 8px;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        letter-spacing: -0.333333px;
+        margin: 4px 0 0 0;
+        color: $whiteColor;
+    }
+}
+.mobile-roadmap{
+    display: none;
+}
+.device-roadmap{
+    display: flex;
+    gap: 0 30px;
+}
+.roadmap-section__mobile-indicator{
+    display: none;
+}
+.roadmap-section{
+    margin-top: 45px;
+    .boxbek{
+        width: 33%;
+        h3{
+            font-size: 18px;
+            letter-spacing: -0.25px;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px){
+
+    .road-map-page{
+        padding: 24px;
+    }
+    .device-roadmap{
+        gap: 0 10px;
+    }
+    .roadmap-section{
+        .planned-title{
+            
+            h3,p{
+                font-size: 14px;
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .mobile-roadmap{
+        display: block;
+    }
+    .device-roadmap{
+        display: none;
+    }
+
+    .road-map-page{
+        padding: 0;
+    }
+    .roadmap-section{
+        margin-top: 4px;
+    }
+    .roadmap-section__mobile-indicator{
+        display: block;
+        border-bottom: 1px solid #8C92B3;
+        .mobile-indicator__btn{
+            width: 33.333333%;
+            text-align: center;
+            padding: 16px 0;
+            background-color: transparent;
+            font-size: 13px;
+            font-weight: 700;
+
+            span{
+                pointer-events: none;
+            }
+        }
+    }
+
+    .road-map-header{
+        padding: 24px;
+        border-radius: 0;
+
+        .link.btn-button{
+            line-height: 25px;
+        }
+    }
+
+    .roadmap-section{
+        display: block;
+        padding: 0 24px;
+        .boxbek{
+            width: 100%;
+            margin: 0 auto;      
+                h3{
+                    font-size: 18px;
+                }
+        }
+    }
+
+}

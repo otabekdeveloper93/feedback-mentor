@@ -1,0 +1,172 @@
+@import '../../assets/scss/variable.scss';
+
+.comment-page{
+    width: 760px;
+    margin: 80px auto;
+}
+.comment-header{
+    width: 100%;
+    position: relative;
+    .header-link-box{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.comment-body{
+    width: 100%;
+    margin-top: 24px;
+    padding: 24px 32px 40px 32px;
+    position: relative;
+    background-color: $whiteColor;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    .comment-count{
+        margin: 0;
+        padding-left: 2px;
+        color: $darkColor;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .comment-user{
+        border-bottom: 1px solid #8c92b340;
+        .comment-user-header{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 28px;
+            button{
+                background-color: transparent;
+                color: $activeColor;
+                font-weight: 600;
+                font-size: 13px;
+            }
+            button:hover{
+                text-decoration: underline;
+            }
+            .user-name-img{
+                display: flex;
+                align-items: center;
+
+                img{
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 32px;
+                    border-radius: 50%;
+                }
+                .user-name-name{
+                    h5{
+                        font-size: 14px;
+                        margin: 0;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                }
+            }
+
+        }
+        p{
+            color: #647196;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            padding-left: 72px;
+            span{
+                font-size: 15px;
+                font-weight: 700;
+                color: $primaryColor;
+            }
+        }
+
+    }
+    .reply-form-comments{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        .reply-text-aria{
+            width: 461px;
+            cursor: pointer;
+            height: 80px;
+            padding: 16px 24px;
+            margin-left: 72px;
+            resize: none;
+            background: #F7F8FD;
+            border: 1px solid #4661E6;
+            border-radius: 5px;
+        }
+    }
+    .displayNone{
+        display: none;
+    }
+}
+
+
+
+.add-comment-box{
+    width: 100%;
+    margin-top: 24px;
+    border-radius: $borderRadius;
+    overflow: hidden;
+    padding: 32px;
+    padding-top: 24px;
+    background-color: $whiteColor;
+    h3{
+        margin: 0;
+        padding-left: 2px;
+        margin-bottom: 24px;
+        font-size: 18px;
+        font-weight: 700;
+        letter-spacing: -0.25px;
+    }
+    .add-comments-form{
+        padding-left: 2px;
+        width: 100%;
+        .add-comment-text-aria{
+            width: 100%;
+            height: 80px;
+            resize: none;
+            padding: 16px 24px;
+            cursor: pointer;
+            border: 1px solid #4661E6;
+            border-radius: 5px;
+        }
+        .comment-flex-box{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 14px;
+            p{
+                font-size: 15px;
+                color: #647196;
+                font-weight: 400;
+            }
+            button{
+                font-size: 14px;
+                font-weight: 700;
+                padding: 14px 24px;
+            }
+        }
+    }
+}
+.comment-user.reply-comments{
+    margin-left: 24px;
+    border: none;
+}
+@media only screen and (max-width: 790px){
+    .comment-page{
+        width: 100%;
+        max-width: 760px;
+        padding: 0 15px;
+        margin: 56px auto;
+    }
+}
+@media only screen and (max-width: 414px){
+    .comment-page{
+        width: 100%;
+        max-width: 760px;
+        margin: 34px auto;
+    }
+}

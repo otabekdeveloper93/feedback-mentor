@@ -1,0 +1,38 @@
+@import "../../assets/scss/variable.scss";
+
+.btn-button{
+    font-weight: 700;
+    font-size: 14px;
+    border: none;
+    color: $defaultColor;
+    padding: 12px 25px;
+    border-radius: $borderRadius;
+    line-height: 20px;
+}
+.link{
+    display: inline-block;
+}
+.primary{
+    background-color: $primaryColor;
+}
+.primary:hover{
+    background-color: $primaryHoverColor; 
+}
+.danger{
+    background-color: $dangerColor;
+}
+.danger:hover{
+    background-color: $dangerHoverColor;
+}
+.dark{
+    background-color: $darkColor;
+}
+.dark:hover{
+    background-color: $darkHoverColor;
+}
+.active-color{
+    background-color: $activeColor;
+}
+.active-color:hover{
+    background-color: $activeHoverColor;
+}

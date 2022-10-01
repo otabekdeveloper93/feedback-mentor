@@ -1,0 +1,113 @@
+@import "../../assets/scss/variable.scss";
+
+.road-map-card{
+    width: 100%;
+    min-height: 272px;
+    border-radius: 5px;
+    margin-top: 25px;
+    background-color: $whiteColor;
+    overflow: hidden;
+    p{
+        color: #647196;
+    }
+    .type-color{
+        display: block;
+        width: 100%;
+        height: 6px;
+    }
+    .road-map-card-info-box{
+        width: 100%;
+        height: 266px;
+        padding: 32px;
+        padding-top: 25px;
+
+        .roadmap-title-info{
+            display: flex;
+            align-items: center;
+            height: 23px;
+
+            .iconca{
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                margin-right: 16px;
+            }
+            .roadInfo{
+                font-weight: 400;
+                font-size: 16px;
+                color: #647196;
+            }
+        }
+        h3{
+            margin: 0;
+            margin-top: 8px;
+            font-weight: 700;
+            font-size: 18px;
+            letter-spacing: -0.25px;
+        }
+        p{
+            margin: 4px 0 14px 0;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+        }
+        .road-nimadir{
+            display: flex;
+            width: 100%;
+            height: 55.5px;
+            justify-content: space-between;
+            align-items: center;
+            .colorDark{
+                display: flex;
+                color: $darkColor;
+                font-size: 13px;
+                font-weight: 700;
+                align-items: center;
+                padding: 8px 10px;
+                svg{
+                    width: 20px;
+                    stroke-width: 1px;
+                    fill: $activeColor;
+                }
+            }
+            .feedback_comments{
+                display: flex;
+                align-items: center;
+                svg{
+                    fill: #CDD2EE;
+                    width: 18px;
+                    height: 16px;
+                }
+                span{
+                    display: inline-block;
+                    margin-left: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .planned{
+        background-color: $orangeColor;
+    }
+    .in-progress{
+        background-color: $primaryColor;
+    }
+    .live{
+        background-color: #62BCFA;
+    }
+}
+@media only screen and (max-width: 790px){
+    .road-map-card{
+
+        .road-map-card-info-box{
+            padding: 26px 20px 24px 20px;
+    
+            h3,p,span{
+                font-size: 13px !important;
+            }
+        }
+    }
+
+}

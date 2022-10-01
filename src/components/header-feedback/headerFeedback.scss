@@ -1,0 +1,109 @@
+@import '../../assets/scss/variable.scss';
+
+.diplayNone{
+    display: none;
+}
+
+.header-feedback{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 12px;
+    width: 825px;
+    height: 72px;
+    background: $bgHeaderColor;
+    border-radius: $borderRadius;
+
+    .feedback-logo{
+        display: flex;
+        align-items: center;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+        h1{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.25px;
+            color: $whiteColor;
+        }
+    }
+}
+
+.feedback-sort-btn-box{
+    display: inline-block;
+    margin-right: 100px;
+    position: relative;
+    button{
+        position: relative;
+        display: flex;
+        background-color: transparent;
+        color: $whiteColor;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 700;
+        padding-right: 15px;
+        span{
+            font-weight: 400;
+            display: inline-block;
+            margin-right: 5px;
+        }
+        .Chevron{
+            position: absolute;
+            right: 0;
+            stroke-width: 1px;
+        }
+    }
+    ul{
+        position: absolute;
+        padding: 0;
+        list-style: none;
+        top: 35px;
+        width: 255px;
+        height: 192px;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px -7px rgba(55, 63, 104, 0.350492);
+        border-radius: 10px;
+        z-index: 100;
+        overflow: hidden;
+        li{ 
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
+            font-size: 16px;
+            padding: 0 24px;
+            border-bottom: 1px solid #3a437416;
+        }
+        li:hover{
+            color: $primaryColor;
+        }
+        .borderNone{
+            border: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 790px){
+    .feedback-sort-btn-box{
+        margin-right: 70px;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .header-feedback{
+        border-radius: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 24px;
+        
+        .feedback-logo{
+            display: none;
+        }
+        .feedback-sort-btn-box{
+            margin: 0;
+        }
+    }
+}

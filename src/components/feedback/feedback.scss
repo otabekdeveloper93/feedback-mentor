@@ -1,0 +1,131 @@
+@import "../../assets/scss/variable.scss";
+
+.feedback-item{
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding: 28px 32px;
+    width: 100%;
+    height: 151px;
+    background: $whiteColor;
+    border-radius: $borderRadius;
+
+    .feedback_comment-box{
+        display: none;
+    }
+    .upvotes{
+        text-align: center;
+        background: $defaultColor;
+        border-radius: $borderRadius;
+        padding: 10px 9px 8px 9px;
+        svg{
+            pointer-events: none;
+            width: 24px;
+            height: 20px;
+            fill: $activeColor;
+        }
+        p{
+            pointer-events: none;
+            margin: 0;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+    }
+    .upvotes.mobileUpvotes{
+        display: none;
+    }
+    .activeBlue{
+        background-color: $activeColor;
+        color: $whiteColor;
+        svg{
+            fill: $whiteColor;
+        }
+    }
+    .upvotes:hover{
+        cursor: pointer;
+        background-color: $defaultHoverColor;
+    }
+    .Feedback-title-box{
+        position: absolute;
+        top: 28px;
+        left: 100px;
+        h3{
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: -0.25px;
+            color: $darkColor;
+            margin: 0;
+            margin-bottom: 4px;
+        }
+        p{
+            margin: 0;
+            margin-bottom: 12px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 23px;
+            color: #647196;
+        }
+    }
+
+    .feedback_comments{
+        display: flex;
+        align-items: center;
+        svg{
+            fill:#CDD2EE;
+        }
+        span{
+            display: inline-block;
+            margin-left: 8px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 23px;
+            text-align: center;
+            letter-spacing: -0.222222px;
+            color: $darkColor;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 414px){
+    .feedback-item{
+        padding: 24px;
+        margin-top: 16px;
+        display: block;
+        height: auto;
+
+        .upvotes{
+            display: none;
+        }
+
+        .Feedback-title-box{
+            position: relative;
+            top: 0;
+            left: 0;
+
+        }
+        .feedback_comments{
+            display: none;
+        }
+        .feedback_comment-box{
+            display: flex;
+            margin-top: 16px;
+            align-items: center;
+            justify-content: space-between;
+            .feedback_comments.active{
+                display: flex;
+            }
+            .upvotes.mobileUpvotes{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
