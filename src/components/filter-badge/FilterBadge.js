@@ -1,5 +1,4 @@
 import {useContext} from 'react';
-
 import { TodosContext } from "../contexts/todos";
 import TypeBadge from "../type-badge/TypeBadge";
 
